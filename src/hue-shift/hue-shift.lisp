@@ -89,7 +89,8 @@ Author: Michał "phoe" Herda <phoe@disroot.org>
         (s (aref a 1))
         (v (aref a 2))
         (scaled-rotation (* rotation (coerce 1/360 'single-float))))
-    (hsv (mod (+ h scaled-rotation) 1.0) s v)))
+    (declare (type (single-float 0.0 1.0) scaled-rotation))
+    (the hsv (hsv (mod (+ h scaled-rotation) 1.0) s v))))
 
 (declaim (inline rotate-rgb))
 (defun rotate-rgb (a rotation)
