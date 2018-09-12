@@ -13,5 +13,5 @@ Author: Michał "phoe" Herda <phoe@disroot.org>
   :depends-on (#:qtools
                #:qtcore
                #:qtgui)
-  :components ((:file "package")
-               (:file "hue-shift")))
+  :components ((:file "src/package")
+               (:file "src/hue-shift/hue-shift")))
