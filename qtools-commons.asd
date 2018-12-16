@@ -5,9 +5,9 @@ Author: Michał "phoe" Herda <phoe@disroot.org>
 |#
 
 (asdf:defsystem #:qtools-commons
-  :description "Describe qtools-commons here"
-  :author "Your Name <your.name@example.com>"
-  :license  "Specify license here"
+  :description "Qtools utilities and functions"
+  :author "Michał \"phoe\" Herda <phoe@disroot.org>"
+  :license "Artistic License 2.0"
   :version "0.0.1"
   :serial t
   :depends-on (#:qtools
